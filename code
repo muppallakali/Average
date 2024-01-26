@@ -1,0 +1,6 @@
+function mergeObjects(...objects) {
+    console.log(objects);       
+    let mergedObject = objects.reduce((a, b) => ({ ...a, ...b }), {});    
+    console.log(mergedObject);
+}
+mergeObjects({ a: 1, b: 2 }, { c: 3 }, { d: 4, e: 5 });
